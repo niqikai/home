@@ -1,5 +1,4 @@
-# Home
-
+* [首页](/)
 * LeetCode
 
 * JDBC

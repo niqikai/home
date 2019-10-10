@@ -65,7 +65,7 @@ Java6开始：JDBC4.1
     1. 会吧com.mysql.jdbc.Driver这份字节码加载进JVM
     1. 当一份字节码被加载进JVM时，就会执行该字节码中的静态代码块
 
-    ```Java
+    ```java
     public class Driver extends NonRegisteringDriver implements java.sql.Driver {
         // Register ourselves with the DriverManager
         static {
@@ -100,7 +100,7 @@ Java6开始：JDBC4.1
 
 * Connection接口：数据库的连接对象
 
-```Java
+```java
 Statement createStatement(); //创建静态语句对象
 ```
 
@@ -112,7 +112,7 @@ Statement createStatement(); //创建静态语句对象
 
 * 创建表
 
-```Java
+```java
 public void test() throws ClassNotFoundException, SQLException {
         String sql = "create table t_student (\n" +
                 "    id bigint primary key auto_increment,\n" +
@@ -135,7 +135,7 @@ public void test() throws ClassNotFoundException, SQLException {
 
 * 异常处理
 
-```Java
+```java
 public void test() {
     String sql = "create table t_student (\n" +
                 "    id bigint primary key auto_increment,\n" +
